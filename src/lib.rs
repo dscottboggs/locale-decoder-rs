@@ -14,7 +14,7 @@ pub enum Error {
 pub type Result<T> = std::result::Result<T, Error>;
 
 impl Locale {
-    fn parse<'a, T: AsRef<str>>(text: T) -> Result<Locale> {
+    pub fn parse<'a, T: AsRef<str>>(text: T) -> Result<Locale> {
         // lang_COUNTRY.ENCODING@MODIFIER
         let mut locale = Locale {
             language: String::new(),
