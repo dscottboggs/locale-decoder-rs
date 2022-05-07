@@ -1,0 +1,11 @@
+[package]
+name = "locale-decoder"
+version = "0.1.0"
+edition = "2021"
+authors = ["D. Scott Boggs"]
+description = "Parser and data structure for dealing with locale strings."
+license = "MPL-2.0"
+repository = "https://github.com/dscottboggs/locale-decoder-rs"
+
+[dependencies]
+thiserror = "1.0.31"
